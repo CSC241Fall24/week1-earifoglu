@@ -19,7 +19,7 @@ public class Bulbasaur {
         this.level = lv;
 
         if(lv % 16 == 0) {
-            this.id = (lv / 16) + 1
+            this.id = (lv / 16) + 1;
         }
     }
 
@@ -70,6 +70,6 @@ public class Bulbasaur {
         // Create and return a new Bulbasaur object with the same id and level
         Bulbasaur newBulb = new Bulbasaur();
         newBulb.setLevel(this.level);
-        return newBulb(); // Placeholder return value
+        return newBulb; // Placeholder return value
     }
 }
