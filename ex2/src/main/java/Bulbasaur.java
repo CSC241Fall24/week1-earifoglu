@@ -33,7 +33,7 @@ public class Bulbasaur {
     public String getName() {
         // TODO: Implement this method
         // Return the name based on the current id
-        String[] Species = {"Bulbasaur", "Ivysaur", "Venusaur"} 
+        String[] Species = {"Bulbasaur", "Ivysaur", "Venusaur"}; 
         return Species[id - 1]; // Placeholder return value
     }
 
