@@ -18,8 +18,8 @@ public class Bulbasaur extends Object {
         // If the new level is 32 or higher, evolve to Venusaur
         this.level = lv;
 
-        if(lv % 16 == 0) {
-            this.id = (lv / 16) + 1;
+        if(this.level % 16 == 0) {
+            this.id = (this.level / 16) + 1;
         }
     }
 
@@ -34,7 +34,7 @@ public class Bulbasaur extends Object {
         // TODO: Implement this method
         // Return the name based on the current id
         String[] Species = {"Bulbasaur", "Ivysaur", "Venusaur"}; 
-        return Species[id - 1]; // Placeholder return value
+        return Species[this.id - 1]; // Placeholder return value
     }
 
     // getID method
