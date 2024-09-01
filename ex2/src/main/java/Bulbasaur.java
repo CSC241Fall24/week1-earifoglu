@@ -48,7 +48,7 @@ public class Bulbasaur extends Object {
     public String toString() {
         // TODO: Implement this method
         // Return a string representation of the Bulbasaur object
-        return "Level: " + this.getLevel() + ", ID: " + this.getID()// Placeholder return value
+        return "Level: " + this.getLevel() + ", ID: " + this.getID();// Placeholder return value
     }
 
     // equals method
