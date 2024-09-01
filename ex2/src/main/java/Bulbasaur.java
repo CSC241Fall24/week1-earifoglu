@@ -1,4 +1,4 @@
-public class Bulbasaur {
+public class Bulbasaur extends Object {
     private int id;
     private int level;
 
@@ -56,7 +56,7 @@ public class Bulbasaur {
     public boolean equals(Object obj) {
         // TODO: Implement this method
         // Compare this Bulbasaur object with another object
-        if((Bulbasaur)obj.getName().equals(this.getName())) {
+        if(((Bulbasaur)obj.getName()).equals(this.getName())) {
             return true;
         }
         else {
