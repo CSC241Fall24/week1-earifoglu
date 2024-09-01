@@ -56,19 +56,8 @@ public class Bulbasaur extends Object {
     public boolean equals(Object obj) {
         // TODO: Implement this method
         // Compare this Bulbasaur object with another object
-        if(obj instanceOf Bulbasaur) {
-            if(((Bulbasaur)obj.toString()).equals(this.getName())) {
-                return true;
-            }
-            else {
-                return false;
-            }
-        }
+        return obj.toString().equals(this.toString());
             
-        
-        else {
-            return false; // Placeholder return value
-        }
     }
 
     // copy method
