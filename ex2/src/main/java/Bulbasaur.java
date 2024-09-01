@@ -1,4 +1,4 @@
-public class Bulbasaur {
+public class Bulbasaur extends Object {
     private int id;
     private int level;
 
@@ -18,7 +18,7 @@ public class Bulbasaur {
         // If the new level is 32 or higher, evolve to Venusaur
         this.level = lv;
 
-        if(lv % 16 == 0) {
+        if(this.level % 16 == 0 || this.level >= 16) {
             this.id = (lv / 16) + 1;
         }
     }
@@ -48,7 +48,7 @@ public class Bulbasaur {
     public String toString() {
         // TODO: Implement this method
         // Return a string representation of the Bulbasaur object
-        return this.getName(); // Placeholder return value
+        return "Level: " + this.getLevel() + ", ID: " + this.getID();// Placeholder return value
     }
 
     // equals method
@@ -56,12 +56,8 @@ public class Bulbasaur {
     public boolean equals(Object obj) {
         // TODO: Implement this method
         // Compare this Bulbasaur object with another object
-        if(((Bulbasaur)obj.getName()).equals(this.getName())) {
-            return true;
-        }
-        else {
-            return false; // Placeholder return value
-        }
+        return obj.toString().equals(this.toString());
+            
     }
 
     // copy method
