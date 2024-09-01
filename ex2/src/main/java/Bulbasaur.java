@@ -18,7 +18,7 @@ public class Bulbasaur extends Object {
         // If the new level is 32 or higher, evolve to Venusaur
         this.level = lv;
 
-        if(this.lv % 16 == 0 || this.lv >= 16) {
+        if(this.level % 16 == 0 || this.level >= 16) {
             this.id = (lv / 16) + 1;
         }
     }
